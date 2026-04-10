@@ -1,8 +1,8 @@
 class Wally < Formula
   desc "Native macOS video wallpaper manager with CLI"
   homepage "https://github.com/mikevanl/Wally"
-  url "https://github.com/mikevanl/Wally/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "d8fc074f7aab5c83103d78d90204b4f27de24244e5cdb47cf7c829974559fe98"
+  url "https://github.com/mikevanl/Wally/archive/refs/tags/v1.0.5.tar.gz"
+  sha256 "0509d31c68295eb580d67b54d7ff2aee305354209ed778f66d1be1ad734fc769"
   license "MIT"
 
   depends_on :macos
