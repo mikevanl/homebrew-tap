@@ -36,10 +36,13 @@ class Audiomix < Formula
     app_dir = prefix/"AudioMix.app"
     app_dir.mkpath
     cp_r Dir["build/Build/Products/Release/AudioMix.app/*"], app_dir
+    cp "App/AudioMix.entitlements", prefix/".entitlements"
   end
 
   def post_install
-    system "codesign", "--force", "--deep", "--sign", "-", prefix/"AudioMix.app"
+    system "codesign", "--force", "--deep", "--sign", "-",
+           "--entitlements", prefix/".entitlements",
+           prefix/"AudioMix.app"
   end
 
   def caveats
