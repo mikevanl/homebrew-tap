@@ -1,13 +1,13 @@
 class Audiomix < Formula
   desc "Per-app volume, mute, and output device routing for macOS"
   homepage "https://github.com/mikevanl/audiomix"
-  url "https://github.com/mikevanl/audiomix/archive/refs/tags/v0.1.5.tar.gz"
-  sha256 "f8764157deba4eb7e66421c750f0f16a4fcd66e4e34cd95f6ba8e65d151aadf1"
+  url "https://github.com/mikevanl/audiomix/archive/refs/tags/v0.1.6.tar.gz"
+  sha256 "642e8f9d5c3acd28a4eae927ccf27525ddcd6580288149af20bbc768d0ada5d8"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/mikevanl/audiomix/releases/download/v0.1.5"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f5294a621605b0d51e9b599e055dbd8ae20e169312c470b5bde852e4514e5713"
+    root_url "https://github.com/mikevanl/audiomix/releases/download/v0.1.6"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "cf04d7a0083c5d40bee313e16e55b67a92c62bcca521c085130eaa01aa116898"
   end
 
   depends_on :macos => :sonoma
