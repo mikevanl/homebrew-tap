@@ -31,6 +31,7 @@ class Audiomix < Formula
            "build", *xcodebuild_args
 
     bin.install "build/Build/Products/Release/audiomix"
+    (prefix/"Frameworks").install "build/Build/Products/Release/AudioMixKit.framework"
 
     app_dir = prefix/"AudioMix.app"
     app_dir.mkpath
